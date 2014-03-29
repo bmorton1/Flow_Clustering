@@ -1,3 +1,13 @@
+from numpy import *
+
+def analyzeVerse(fileName):
+	f = open(fileName, 'r')
+	syllPerLine = array([])
+	for line in f:
+		syllPerLine = append(syllPerLine, sum(array([CountSyllables(word) for word in line.split()])))
+	print(syllPerLine)
+	return syllPerLine.mean(), syllPerLine.std()
+
 def CountSyllables(word, isName=True):
     vowels = "aeiouy"
     #single syllables in words like bread and lead, but split in names like Breanne and Adreann
@@ -31,3 +41,8 @@ def CountSyllables(word, isName=True):
         numVowels -= 1
 
     return numVowels
+
+def main():
+	print analyzeVerse("../../Data/Lyrics/Biggie - Juicy.txt")
+
+main()
