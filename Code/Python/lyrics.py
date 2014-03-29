@@ -12,7 +12,7 @@ RAPGENIUS_SEARCH_URL = 'http://rapgenius.com/search'
 
 # given a rapgenius formatted lyrics url, parse out the raw lyrics text
 def getLyrics(url):
-    print 'Retrieving Lyrics for %s' % (url)
+    print 'Retrieving Lyrics for %s\n' % (url)
     soup = BeautifulSoup(urllib2.urlopen(url).read())
     ret = ""
     for row in soup('div', {'class':'lyrics'}):
@@ -27,7 +27,7 @@ def formSearchUrl(artist, song):
     raw_query = '%s %s' % (artist.strip(), str(song).strip())
     re.sub(r'\W+', '', raw_query)
     searchUrl = RAPGENIUS_SEARCH_URL + '?' + urllib.urlencode({'q': raw_query})
-    print searchUrl  
+    print searchUrl + "\n" 
     return searchUrl
 
 # execute the search and return the first result
@@ -51,8 +51,10 @@ def searchAndWriteFile(artist, song):
             print 'No lyrics found.'
         else:
             #print lyrics
-            print song
-            f = open('%s-%s-lyrics.txt' % (artist.strip(), str(song).strip()), 'w');
+            #print song
+            song = re.sub('[^a-zA-Z0-9 ]+', '', str(song))
+            artist = re.sub('[^a-zA-Z0-9 ]+', '', artist)
+            f = open('%s-%s-lyrics.txt' % (artist.strip(), str(song)), 'w')
             f.write(artist + "\n")
             f.write(str(song) + "\n")
             f.write(lyrics.encode('utf-8'))
