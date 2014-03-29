@@ -24,7 +24,8 @@ def getLyrics(url):
 # create a search url for the given, artist, song
 def formSearchUrl(artist, song):
     #form search url, take first result.
-    raw_query = '%s %s' % (artist.strip(), song.strip())
+    raw_query = '%s %s' % (artist.strip(), str(song).strip())
+    re.sub(r'\W+', '', raw_query)
     searchUrl = RAPGENIUS_SEARCH_URL + '?' + urllib.urlencode({'q': raw_query})
     print searchUrl  
     return searchUrl
@@ -33,21 +34,26 @@ def formSearchUrl(artist, song):
 def executeSearch(searchUrl):
     soup = BeautifulSoup(urllib2.urlopen(searchUrl).read())
     # take the first search result and grab its url:
-    return soup.find('li', {'class':'search_result'}).findChildren('a')[0]['href']
+    results = soup.find('li', {'class':'search_result'})
+    if results:
+        links = results.findChildren('a')
+        if links:
+            return links[0]['href']
 
 def searchAndWriteFile(artist, song):
 
     url = formSearchUrl(artist, song)
     lyricsUrl = executeSearch(url)
-    lyrics = getLyrics(lyricsUrl)
+    if lyricsUrl:
+        lyrics = getLyrics(lyricsUrl)
 
-    if not lyrics:
-        print 'No lyrics found.'
-    else:
-        #print lyrics
-        print song
-        f = open('%s-%s-lyrics.txt' % (artist.strip(), song.strip()), 'w');
-        f.write(artist + "\n")
-        f.write(song + "\n")
-        f.write(lyrics.encode('utf-8'))
-        f.close()
+        if not lyrics:
+            print 'No lyrics found.'
+        else:
+            #print lyrics
+            print song
+            f = open('%s-%s-lyrics.txt' % (artist.strip(), str(song).strip()), 'w');
+            f.write(artist + "\n")
+            f.write(str(song) + "\n")
+            f.write(lyrics.encode('utf-8'))
+            f.close()
