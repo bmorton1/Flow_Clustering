@@ -1,12 +1,21 @@
-from numpy import *
+import numpy as np
+import sqlite3 as lite
+import glob
+import os
 
 def analyzeVerse(fileName):
 	f = open(fileName, 'r')
-	syllPerLine = array([])
+	
+	#first two lines are artist and song title, respecively
+	artistName = f.readline()
+	songName = f.readline()
+	
+	#rest of file is lyrics to song's first verse
+	syllPerLine = np.array([])
 	for line in f:
-		syllPerLine = append(syllPerLine, sum(array([CountSyllables(word) for word in line.split()])))
-	print(syllPerLine)
-	return syllPerLine.mean(), syllPerLine.std()
+		syllCount = sum(np.array([CountSyllables(word) for word in line.split()]))
+		syllPerLine = np.append(syllPerLine, syllCount)
+	return songName, artistName, syllPerLine.mean(), syllPerLine.std()
 
 def CountSyllables(word, isName=True):
     vowels = "aeiouy"
@@ -43,6 +52,36 @@ def CountSyllables(word, isName=True):
     return numVowels
 
 def main():
-	print analyzeVerse("../../Data/Lyrics/Biggie - Juicy.txt")
+
+	con = lite.connect('test.db')
+	with con:
+		cur = con.cursor()
+		cur.execute("DROP TABLE IF EXISTS Songs")
+		cur.execute("CREATE TABLE Songs(	SongName VARCHAR(30), \
+																			Artist VARCHAR(30), \
+																			avgSyllPerLine REAL, \
+																			stddev REAL, \
+																			PRIMARY KEY (SongName, Artist))")
+
+	#lyricDir = raw_input("Enter directory containing lyrics files:")
+	lyricDir = "../../Data/Lyrics/"		
+	for fileName in glob.glob(lyricDir + "*.txt"):
+		print fileName
+		results = analyzeVerse(fileName)
+		cur.execute("INSERT INTO Songs(SongName, Artist, avgSyllPerLine, stddev) \
+																VALUES(	'" + str(results[0]) + "', \
+																				'" + str(results[1]) + "', \
+																				'" + str(results[2]) + "', \
+																				'" + str(results[3]) + "')")
+
+
+		con.commit()
+
+	cur.execute("SELECT * FROM Songs")
+	rows = cur.fetchall()
+	for row in rows:
+		print row
+	
+	con.close()
 
 main()
