@@ -1,3 +1,4 @@
+import re
 import numpy as np
 import sqlite3 as lite
 import glob
@@ -6,20 +7,36 @@ import os
 def analyzeVerse(fileName):
 	f = open(fileName, 'r')
 	
-	#first two lines are artist and song title, respecively
+	# by design, first two lines are artist and song title, respectively
 	artistName = f.readline()
 	songName = f.readline()
-	
-	#rest of file is lyrics to song's first verse
+
+	# remove " ' " characters to avoid syntax errors with SQL commands later
+	artistName = re.sub("'", '', artistName)
+	songName = re.sub("'", '', songName)
+
+	# rest of file is lyrics to song's first verse
 	syllPerLine = np.array([])
-	for line in f:
+
+	line = f.readline()
+	# skip to start of first verse
+	while line != '' and "Verse 1" not in line:
+		line = f.readline()
+ 	
+	# assume no verse contains a whitespace line, so break when a blank or whitespace line
+	# is encountered 
+	
+	line = f.readline()
+	while line != '' and not line.isspace():
 		syllCount = sum(np.array([CountSyllables(word) for word in line.split()]))
 		syllPerLine = np.append(syllPerLine, syllCount)
+		line = f.readline()
+
 	return songName, artistName, syllPerLine.mean(), syllPerLine.std()
 
 def CountSyllables(word, isName=True):
     vowels = "aeiouy"
-    #single syllables in words like bread and lead, but split in names like Breanne and Adreann
+    # single syllables in words like bread and lead, but split in names like Breanne and Adreann
     specials = ["ia","ea"] if isName else ["ia"]
     specials_except_end = ["ie","ya","es","ed"]  #seperate syllables unless ending the word
     currentWord = word.lower()
@@ -66,7 +83,6 @@ def main():
 	#lyricDir = raw_input("Enter directory containing lyrics files:")
 	lyricDir = "../../Data/Lyrics/"		
 	for fileName in glob.glob(lyricDir + "*.txt"):
-		print fileName
 		results = analyzeVerse(fileName)
 		cur.execute("INSERT INTO Songs(SongName, Artist, avgSyllPerLine, stddev) \
 																VALUES(	'" + str(results[0]) + "', \
@@ -77,6 +93,8 @@ def main():
 
 		con.commit()
 
+	
+	# print SQL table
 	cur.execute("SELECT * FROM Songs")
 	rows = cur.fetchall()
 	for row in rows:
