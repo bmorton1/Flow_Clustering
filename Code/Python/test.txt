@@ -1,0 +1,622 @@
+../../Data/Lyrics/Notorious BIG-Hypnotize-lyrics.txt
+Notorious BIG
+Hypnotize
+
+Hah, sicker than your average
+ is in Verse 1
+[ 8.]
+Poppa twist cabbage off instinct, niggas don't think shit stink
+ is in Verse 1
+[  8.  14.]
+Pink gators, my Detroit players
+ is in Verse 1
+[  8.  14.   7.]
+Timbs for my hooligans in Brooklyn
+ is in Verse 1
+[  8.  14.   7.   9.]
+Dead right, if the head right, Biggie there every night
+ is in Verse 1
+[  8.  14.   7.   9.  14.]
+Poppa been smooth since days of Underroos
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.]
+Never lose, never choose to, bruise crews who
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.]
+Do something to us, talk go through us
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.]
+Girls walk to us, wanna do us, screw us
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.]
+Who us? Yeah, Poppa and Puff (ehehehe)
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.  12.]
+Close like Starsky and Hutch, stick to clutch
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.  12.   9.]
+Dare I squeeze three at your cherry M-3
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.  12.   9.   8.]
+(Take that, take that, take that, ha ha!)
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.  12.   9.   8.   8.]
+Bang every MC easily, busily
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.  12.   9.   8.   8.  11.]
+Recently niggas fronting ain't saying nothing (nope)
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.  12.   9.   8.   8.  11.  13.]
+So I just speak my piece, (c'mon) keep my peace
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.  12.   9.   8.   8.  11.  13.
+  14.]
+Cubans with the Jesus piece (thank you God), with my peeps
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.  12.   9.   8.   8.  11.  13.
+  14.  13.]
+Packing, asking who want it, you got it nigga flaunt it
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.  12.   9.   8.   8.  11.  13.
+  14.  13.  14.]
+That Brooklyn bullshit, we on it
+ is in Verse 1
+[  8.  14.   7.   9.  14.  10.  11.  10.  10.  12.   9.   8.   8.  11.  13.
+  14.  13.  14.   8.]
+Hypnotize
+
+Notorious BIG
+
+10.6842105263
+2.36315203375
+../../Data/Lyrics/RUN DMC-Its Tricky-lyrics.txt
+RUN DMC 
+Its Tricky
+
+Its Tricky
+
+RUN DMC 
+
+nan
+0.0
+../../Data/Lyrics/Slick Rick-Childrens Story-lyrics.txt
+Slick Rick
+Childrens Story
+
+Here we go
+ is in Verse 1
+[ 3.]
+Once upon a time not long ago
+ is in Verse 1
+[ 3.  9.]
+When people wore pajamas and lived life slow
+ is in Verse 1
+[  3.   9.  10.]
+When laws were stern and justice stood
+ is in Verse 1
+[  3.   9.  10.   8.]
+And people were behavin' like they ought ta good
+ is in Verse 1
+[  3.   9.  10.   8.  11.]
+There lived a lil' boy who was misled
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.]
+By another lil' boy and this is what he said:
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.]
+"Me and you, Ty, we gonna make some cash
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.]
+Robbin' old folks and makin' tha dash"
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.]
+They did the job, money came with ease
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.]
+But one couldn't stop, it's like he had a disease
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.]
+He robbed another and another and a sista and her brotha
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.]
+Tried to rob a man who was a D.T. undercover
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.]
+The cop grabbed his arm, he started acting erratic
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.]
+He said "Keep still, boy, no need for static"
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.]
+Punched him in his belly and he gave him a slap
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.]
+But little did he know the lil' boy was strapped
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.]
+The kid pulled out a gun, he said "Why did ya hit me?"
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.]
+The barrel was set straight for the cop's kidney
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.]
+The cop got scared, the kid, he starts to figure
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.]
+"I'll do years if I pull this trigga"
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.]
+So he cold dashed and ran around the block
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.]
+Cop radioes it to another lady cop
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.]
+He ran by a tree, there he saw this sista
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.]
+A shot for the head, he shot back but he missed her
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.]
+Looked around good and from expectations
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.]
+So he decided he'd head for the subway stations
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.]
+But she was coming and he made a left
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.]
+He was runnin' top speed till he was outta breath
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.]
+Knocked an old man down and swore he killed him
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.]
+Then he made his move to an abandoned building
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.]
+Ran up the stairs up to the top floor
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.]
+Opened up the door there, guess who he saw?
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.]
+Dave the dope fiend shootin' dope
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.]
+Who don't know the meaning of water nor soap
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.]
+He said "I need bullets, hurry up, run!"
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.]
+The dope fiend brought back a spanking shotgun
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.]
+He went outside but there was cops all over
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.]
+Then he dipped into a car, a stolen Nova
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.]
+Raced up the block doing 83
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.]
+Crashed into a tree near university
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.]
+Escaped alive though the car was battered
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.]
+Rat-a-tat-tatted and all the cops scattered
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.]
+Ran out of bullets and still had static
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.]
+Grabbed a pregnant lady and out the automatic
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.]
+Pointed at her head and he said the gun was full o' lead
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.]
+He told the cops "Back off or honey here's dead"
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.]
+Deep in his heart he knew he was wrong
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.]
+So he let the lady go and he starts to run on
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.  12.]
+Sirens sounded, he seemed astounded
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.  12.   8.]
+Before long the lil' boy got surrounded
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.  12.   8.   8.]
+He dropped the gun, so went the glory
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.  12.   8.   8.   7.]
+And this is the way I have to end this story
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.  12.   8.   8.   7.  11.]
+He was only seventeen, in a madman's dream
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.  12.   8.   8.   7.  11.  13.]
+The cops shot the kid, I still hear him scream
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.  12.   8.   8.   7.  11.  13.  10.]
+This ain't funny so don't ya dare laugh
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.  12.   8.   8.   7.  11.  13.  10.  10.]
+Just another case about the wrong path
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.  12.   8.   8.   7.  11.  13.  10.  10.   9.]
+Straight 'n narrow or yo' soul gets cast
+ is in Verse 1
+[  3.   9.  10.   8.  11.   8.  12.   9.   9.   9.  12.  17.  12.  11.   9.
+  12.   9.  13.   9.  10.  10.   9.  10.  11.  12.  10.  12.   9.  12.  10.
+  12.   7.  10.   7.  11.   9.  10.  11.  12.   4.  12.   9.   9.  10.  12.
+  14.  12.  10.  12.   8.   8.   7.  11.  13.  10.  10.   9.   8.]
+Childrens Story
+
+Slick Rick
+
+10.0689655172
+2.21952207472
+../../Data/Lyrics/Snoop Dogg-Who am I What's my name-lyrics.txt
+Snoop Dogg
+Who am I Whats my name
+
+From the depths of the sea, back to the block
+ is in Verse 1
+[ 8.]
+Snoop Doggy Dogg, funky as the, the, The D.O.C
+ is in Verse 1
+[  8.  10.]
+Went solo on that ass, but it's still the same
+ is in Verse 1
+[  8.  10.  10.]
+Long Beach is the spot where I serve my 'caine
+ is in Verse 1
+[  8.  10.  10.  10.]
+Follow me, follow me, follow me, follow me, but don't lose your grip
+ is in Verse 1
+[  8.  10.  10.  10.  17.]
+Nine-trizzay's the yizzear for me to fuck up shit
+ is in Verse 1
+[  8.  10.  10.  10.  17.  13.]
+So I ain't holdin nuttin' back
+ is in Verse 1
+[  8.  10.  10.  10.  17.  13.   8.]
+And motherfucker, I got five on that twenty sack
+ is in Verse 1
+[  8.  10.  10.  10.  17.  13.   8.  13.]
+It's like that and as a matter of fact (rat-tat-tat-tat)
+ is in Verse 1
+[  8.  10.  10.  10.  17.  13.   8.  13.  14.]
+Cuz I never hesitate to put a nigga on his back
+ is in Verse 1
+[  8.  10.  10.  10.  17.  13.   8.  13.  14.  15.]
+Yeah, so peep out the manuscript
+ is in Verse 1
+[  8.  10.  10.  10.  17.  13.   8.  13.  14.  15.   8.]
+You see that it's a must we drop gangsta shit
+ is in Verse 1
+[  8.  10.  10.  10.  17.  13.   8.  13.  14.  15.   8.  11.]
+What's my motherfuckin name?
+ is in Verse 1
+[  8.  10.  10.  10.  17.  13.   8.  13.  14.  15.   8.  11.   8.]
+Who am I Whats my name
+
+Snoop Dogg
+
+11.1538461538
+2.87819798983
+../../Data/Lyrics/talib kwali-Get By-lyrics.txt
+talib kwali
+Get By
+
+We sell, crack to our own out the back of our homes
+ is in Verse 1
+[ 11.]
+We smell the musk of the dusk in the crack of the dawn
+ is in Verse 1
+[ 11.   9.]
+We go through episodes too, like Attack of the Clones
+ is in Verse 1
+[ 11.   9.  12.]
+Work til we break our back and you hear the crack of the bone
+ is in Verse 1
+[ 11.   9.  12.  14.]
+To get by, just to get by
+ is in Verse 1
+[ 11.   9.  12.  14.   7.]
+Just to get by, just to get by
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.]
+We commute to computers
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.]
+Spirits stay mute while you egos spread rumors
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.]
+We survivalists, turned to consumers
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.]
+Just to get by, just to get by
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.]
+Just to get by, just to get by
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.]
+Ask Him why some people got to live in a trailer, cuss like a sailor
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.]
+I paint a picture with the pen like Norman Mailer
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.]
+Mi Abuela raised three daughters all by herself with no help
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.]
+I think about her struggle and I find the strength in myself
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.  13.]
+These words, melt in my mouth
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.  13.
+   6.]
+They hot, like the jail cell in the South
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.  13.
+   6.   7.]
+Before my nigga CORE bailed me out
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.  13.
+   6.   7.   9.]
+To get by, just to get by
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.  13.
+   6.   7.   9.   7.]
+Just to get by, just to get by
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.  13.
+   6.   7.   9.   7.   8.]
+We do or die like Bed-Stuy through the red sky
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.  13.
+   6.   7.   9.   7.   8.   9.]
+With the window
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.  13.
+   6.   7.   9.   7.   8.   9.   3.]
+Of the red eye
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.  13.
+   6.   7.   9.   7.   8.   9.   3.   1.]
+Let the lead fly, some G. Rap shit, Living to Let Die
+ is in Verse 1
+[ 11.   9.  12.  14.   7.   8.   7.  12.  10.   8.   8.  17.  12.  15.  13.
+   6.   7.   9.   7.   8.   9.   3.   1.  12.]
+Get By
+
+talib kwali
+
+9.375
+3.58018272346
+../../Data/Lyrics/The Roots-What They Do-lyrics.txt
+The Roots
+What They Do
+
+Lost generation, fast paced nation
+ is in Verse 1
+[ 9.]
+World population confront their frustration
+ is in Verse 1
+[  9.  11.]
+The principles of true hip-hop have been forsaken
+ is in Verse 1
+[  9.  11.  10.]
+It's all contractual and about money makin
+ is in Verse 1
+[  9.  11.  10.  12.]
+Pretend-to-be cats don't seem to know they limitation
+ is in Verse 1
+[  9.  11.  10.  12.  13.]
+Exact replication and false representation
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.]
+You wanna be a man, then stand your own
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.]
+To MC requires skills, I demand some shown
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.   9.]
+I let the frauds keep frontin
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.   9.   6.]
+And roam like a cellular phone far from home
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.   9.   6.  11.]
+Giving crowds what they wantin
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.   9.   6.  11.   7.]
+Official hip-hop consumption, the 5th thumpin
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.   9.   6.  11.   7.  11.]
+Keeping your party jumping with an original somethin
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.   9.   6.  11.   7.  11.  16.]
+Yo, I dedicate this to the one-dimensional
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.   9.   6.  11.   7.  11.  16.  13.]
+No imagination, excuse for perpetration
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.   9.   6.  11.   7.  11.  16.  13.  13.]
+My man came over and said: "Yo we thought we heard you"
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.   9.   6.  11.   7.  11.  16.  13.  13.
+  14.]
+Joke's on you; you heard a biting-ass crew but um
+ is in Verse 1
+[  9.  11.  10.  12.  13.  13.  10.   9.   6.  11.   7.  11.  16.  13.  13.
+  14.  14.]
+What They Do
+
+The Roots
+
+11.2941176471
+2.53828811887
+../../Data/Lyrics/wale-88-lyrics.txt
+wale
+88
+
+Carolina blue kicks
+ is in Verse 1
+[ 5.]
+Hottest nigga on your block
+ is in Verse 1
+[ 5.  7.]
+I ain't J.R. Rider but them wolves coming for my spot
+ is in Verse 1
+[  5.   7.  12.]
+From the percentage of youngins winning without no college
+ is in Verse 1
+[  5.   7.  12.  14.]
+I'm in my Laneys but nothing JV about this balling
+ is in Verse 1
+[  5.   7.  12.  14.  13.]
+I lost my deal, got with Will he seen a nigga genius
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.]
+My rapping skills is on Chapel Hill but you ain't see it
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.]
+Eyes low, pyro
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.   3.]
+Grape swisher, my 5's on
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.   3.   5.]
+My opposition decline slow
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.   3.   5.   8.]
+My J's straight out of China like baby Cairo
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.   3.   5.   8.  11.]
+Shout out to Tyga but my squad Balenciaga
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.   3.   5.   8.  11.  13.]
+One of the rarest in flyest niggas to rep the chocolate
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.   3.   5.   8.  11.  13.  13.]
+It was all a dream, it was all a dream
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.   3.   5.   8.  11.  13.  13.  12.]
+Never Michael Jeffrey in 17s, I'm staying with my team
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.   3.   5.   8.  11.  13.  13.  12.  13.]
+No bullshit loyalty rare
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.   3.   5.   8.  11.  13.  13.  12.  13.
+   7.]
+And don't worry 'bout it shawty we here
+ is in Verse 1
+[  5.   7.  12.  14.  13.  15.  14.   3.   5.   8.  11.  13.  13.  12.  13.
+   7.  10.]
+88
+
+wale
+
+10.2941176471
+3.60986729237
+(u'Hypnotize\n', u'Notorious BIG\n', 10.6842105263, 2.36315203375)
+(u'Its Tricky\n', u'RUN DMC \n', u'nan', 0.0)
+(u'Childrens Story\n', u'Slick Rick\n', 10.0689655172, 2.21952207472)
+(u'Who am I Whats my name\n', u'Snoop Dogg\n', 11.1538461538, 2.87819798983)
+(u'Get By\n', u'talib kwali\n', 9.375, 3.58018272346)
+(u'What They Do\n', u'The Roots\n', 11.2941176471, 2.53828811887)
+(u'88\n', u'wale\n', 10.2941176471, 3.60986729237)
