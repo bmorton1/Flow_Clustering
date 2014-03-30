@@ -43,7 +43,7 @@ def plotScatter(xdata, ydata,  xlabel, ylabel, saveLoc, labels=None):
 	
 	fig1 = plt.figure()
 	ax = fig1.add_subplot(111)
-	ax.scatter(xdata, ydata, s = 25, c=labels, alpha=0.7,cmap=cm.Paired, vmin=0, vmax=3)
+	ax.scatter(xdata, ydata, s = 40, c=labels, alpha=0.7,cmap=cm.Paired, vmin=0, vmax=3)
 	ax.set_xlabel(xlabel)
 	ax.set_ylabel(ylabel)
 
@@ -112,7 +112,8 @@ def centroid(spec, sr):
 def main_playlist(type = 'gmm'):
 
 	data = load(open('vocalFeatureData.p', 'r'))
-	ids = data['artist']
+	artist = data['song']
+	songs = data['artist']
 
 	del(data['ID'])
 	del(data['artist'])
@@ -124,6 +125,7 @@ def main_playlist(type = 'gmm'):
 		g = mixture.GMM(n_components=4)
 		g.fit(data)
 		labels = g.predict(data)
+
 	elif type == 'kmeans':
 		k = cluster.KMeans(4)
 		k.fit(data)
@@ -134,6 +136,9 @@ def main_playlist(type = 'gmm'):
 def main_plots():
 	""" Make plots """
 	data = load(open('vocalFeatureData.p', 'r'))
+
+	artist = data['song']
+	songs = data['artist']
 
 	del(data['ID'])
 	del(data['artist'])
@@ -148,31 +153,14 @@ def main_plots():
 				continue
 			else:
 				# Scale data to be from 0 to 1
-				saveFile = "Clustered/{} - {}.pdf".format(keys[i], keys[j])
+				saveFile = "Clustered/{} - {}.png".format(keys[i], keys[j])
 				xData = np.divide(data[keys[i]], np.max(data[keys[i]]))
 				yData = np.divide(data[keys[j]], np.max(data[keys[j]]))
 				subData = np.vstack((xData, yData)).T
 				k = cluster.KMeans(4)
 				k.fit(subData)
 				labels = k.predict(subData)
-
 				plotScatter(xData, yData, keys[i], keys[j], saveFile, labels)
-
-def fixData():
-	vocalData = loadmat('../../Data/firstVerseTimes.mat')
-	oldData = load(open('vocalFeatureData.p', 'r'))
-	syllableData = load(open('syllAnalysis.p', 'r'))
-	newData = {'ID': np.array([vocalData['firstVerseTimes'][i][0][0][0] for i in range(len(vocalData['firstVerseTimes']))]), 
-				'artist': [vocalData['firstVerseTimes'][i][1][0] for i in range(len(vocalData['firstVerseTimes']))],
-				'song': np.array([vocalData['firstVerseTimes'][i][2][0] for i in range(len(vocalData['firstVerseTimes']))]),
-				'syllableMean': np.array([syllableData[i+1][0] for i in range(41)]).astype(float),
-				'syllableVar': np.array([syllableData[i+1][1] for i in range(41)]).astype(float)}
-
-	newData['syllableMean'][22] = 0
-	newData['syllableVar'][22] = 0
-
-	oldData.update(newData)
-	dump(oldData, open('vocalFeatureData.p', 'w'))
 
 def main():
 	""" 
@@ -234,11 +222,10 @@ def main():
 
 	print ('Done')
 
+
 if __name__ == '__main__':
 
 	# main()
-
-	# fixData()
 	main_plots()
 	# out_kmeans = main_playlist('kmeans')
 
