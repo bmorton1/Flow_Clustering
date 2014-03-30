@@ -1,3 +1,4 @@
+import pickle
 import re
 import numpy as np
 import sqlite3 as lite
@@ -17,14 +18,12 @@ def analyzeVerse(fileName):
 	songName = songName.strip("\n")
 	songName = songName.replace("'", "")
 
-	print "******" + songName + " by " + artistName + "******"
 	# rest of file is lyrics to song's first verse
 	syllPerLine = np.array([])
 
 	line = f.readline()
 	# skip to start of first verse
 	while line != '' and ("Verse 1" not in line and "Verse One" not in line):
-		print "Skipping " + line + "..."
 		line = f.readline()
  	
 	line = f.readline()
@@ -35,7 +34,6 @@ def analyzeVerse(fileName):
 	# assume no verse contains a whitespace line, so break when a blank or 
 	# whitespace line is encountered
 	while line != '' and not line.isspace():
-		print line
 		syllCount = sum(np.array([CountSyllables(word) for word in line.split()]))
 		syllPerLine = np.append(syllPerLine, syllCount)
 		line = f.readline()
@@ -91,8 +89,18 @@ def main():
 
 	lyricDir = "../../Data/Lyrics/"
 	i = 1
+	masterResults = {}
 	for fileName in glob.glob(lyricDir + "*.txt"):
+		# don't have lyrics for song corresponding to Id = 23, so skip to Id = 24
+		if i == 23:
+			i += 1
+		
+		if i > 35:
+			break
+
+		print fileName
 		results = analyzeVerse(fileName)
+		masterResults[i] = [results[2], results[3]]
 		cur.execute("INSERT INTO Songs(Id, SongName, Artist, avgSyllPerLine, stddev) \
 																VALUES(	'" + str(i) + "', \
 																				'" + str(results[0]) + "', \
@@ -103,7 +111,27 @@ def main():
 
 		con.commit()
 		i+=1
+
+		
+	filesleft = [lyricDir + "TI-Why You Wanna-lyrics.txt", lyricDir + "Talib Kweli-Get By-lyrics.txt", lyricDir + "The Luniz-I Got 5 On It-lyrics.txt", lyricDir + "The Roots-What They Do-lyrics.txt", lyricDir + "Wiz Khalifa-Black and Yellow-lyrics.txt", lyricDir + "Wiz Khalifa-Mezmorized-lyrics.txt"]
+
+	for filename in filesleft:
+		results = analyzeVerse(filename)
+		masterResults[i] = [results[2], results[3]]
+		cur.execute("INSERT INTO Songs(Id, SongName, Artist, avgSyllPerLine, stddev) \
+																VALUES(	'" + str(i) + "', \
+																				'" + str(results[0]) + "', \
+																				'" + str(results[1]) + "', \
+																				'" + str(results[2]) + "', \
+																				'" + str(results[3]) + "')")
+
+
+		con.commit()
+		i+=1
+
 	
+	
+	pickle.dump(masterResults, open("results.pickle", 'wb'))
 	# print SQL table
 	cur.execute("SELECT * FROM Songs")
 	rows = cur.fetchall()
