@@ -4,19 +4,27 @@ close all
 
 audioLoc = '../../Audio/Original/';
 saveLoc = '../../Audio/Vocals/';
+load('/Users/Brandon/Personal Projects/Flow_Clustering/Data/firstVerseTimes.mat')
 
-segments = [24, 39; 29, 166; 6, 50; 21, 80; 46, 87; 26, 55; 30, 71; 11, 65]
+segments = cell2mat(firstVerseTimes(:,4:5));
 
 % Grab file list
 fileDir = audioLoc;
-dirList = dir(fileDir);
-while dirList(1).name(1) == '.'
-    dirList(1) = '';
-end
+numFiles = size(firstVerseTimes, 1);
 
 % Run vocal separation code
-for j = 1:size(dirList, 1)
-    fileName = [fileDir, dirList(j).name];
-    saveFile = [saveLoc, 'Vocals_', dirList(j).name, ];
-	VocalSep(fileName, saveFile);
+for j = 1:numFiles
+    fileName = [fileDir, firstVerseTimes{j,3}];
+    saveFile = [saveLoc, 'Vocals_', firstVerseTimes{j,3}];    
+
+    if ~exist(saveFile, 'file')
+	    try
+			VocalSep(fileName, saveFile, segments(j,:));
+		catch
+			disp(['\tNeed to convert ', saveFile])
+			continue
+		end
+	end
+
+	disp(['Done with ', saveFile, ' ', num2str(j), ' of ', num2str(numFiles)])
 end

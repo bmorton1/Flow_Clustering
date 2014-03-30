@@ -157,7 +157,7 @@ function I = similarity_indices(S,sim)
 
 m = size(S,1);                                                              % Number of frames
 I = cell(1,m);
-w = waitbar(0,'REPET-SIM 1/2');                                             % Wait bar
+% w = waitbar(0,'REPET-SIM 1/2');                                             % Wait bar
 for j = 1:m                                                                 % Loop over the frames
     [~,i] = findpeaks(S(:,j), ...                                           % Find local maxima
         'minpeakheight',sim(1), ...                                         % Minimum peak height
@@ -165,9 +165,9 @@ for j = 1:m                                                                 % Lo
         'npeaks',sim(3), ...                                                % Number of peaks
         'sortstr','descend');                                               % Peak sorting
     I{j} = i;                                                               % Similarity indices for frame j
-    waitbar(j/m,w);
+    % waitbar(j/m,w);
 end
-close(w)
+% close(w)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -185,12 +185,12 @@ function M = repeating_mask(V,I)
 
 [n,m] = size(V);                                                            % Number of frequency bins and time frames
 W = zeros(n,m);
-w = waitbar(0,'REPET-SIM 2/2');                                             % Wait bar
+% w = waitbar(0,'REPET-SIM 2/2');                                             % Wait bar
 for j = 1:m                                                                 % Loop over the frames
     i = I{j};                                                               % Similarities indices for frame j (i(1) = j)
     W(:,j) = median(V(:,i),2);                                              % Median of the similar frames for frame j
-    waitbar(j/m,w);
+    % waitbar(j/m,w);
 end
-close(w)
+% close(w)
 W = min(V,W);                                                               % For every time-frequency bins, we must have W <= V
 M = (W+eps)./(V+eps);                                                       % Normalize W by V
