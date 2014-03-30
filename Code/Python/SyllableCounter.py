@@ -12,22 +12,30 @@ def analyzeVerse(fileName):
 	songName = f.readline()
 
 	# remove " ' " characters to avoid syntax errors with SQL commands later
-	artistName = re.sub("'", '', artistName)
-	songName = re.sub("'", '', songName)
+	artistName = artistName.strip("\n")
+	artistName = artistName.replace("'", "")
+	songName = songName.strip("\n")
+	songName = songName.replace("'", "")
 
+	print "******" + songName + " by " + artistName + "******"
 	# rest of file is lyrics to song's first verse
 	syllPerLine = np.array([])
 
 	line = f.readline()
 	# skip to start of first verse
-	while line != '' and "Verse 1" not in line:
+	while line != '' and ("Verse 1" not in line and "Verse One" not in line):
+		print "Skipping " + line + "..."
 		line = f.readline()
  	
-	# assume no verse contains a whitespace line, so break when a blank or whitespace line
-	# is encountered 
-	
 	line = f.readline()
+	# skip to first non-whitespace line after "Verse One"
+	while line.isspace():
+		line = f.readline()
+		
+	# assume no verse contains a whitespace line, so break when a blank or 
+	# whitespace line is encountered
 	while line != '' and not line.isspace():
+		print line
 		syllCount = sum(np.array([CountSyllables(word) for word in line.split()]))
 		syllPerLine = np.append(syllPerLine, syllCount)
 		line = f.readline()
@@ -74,25 +82,27 @@ def main():
 	with con:
 		cur = con.cursor()
 		cur.execute("DROP TABLE IF EXISTS Songs")
-		cur.execute("CREATE TABLE Songs(	SongName VARCHAR(30), \
+		cur.execute("CREATE TABLE Songs(	Id INT, \
+																			SongName VARCHAR(30), \
 																			Artist VARCHAR(30), \
 																			avgSyllPerLine REAL, \
 																			stddev REAL, \
-																			PRIMARY KEY (SongName, Artist))")
+																			PRIMARY KEY (Id))")
 
-	#lyricDir = raw_input("Enter directory containing lyrics files:")
-	lyricDir = "../../Data/Lyrics/"		
+	lyricDir = "../../Data/Lyrics/"
+	i = 1
 	for fileName in glob.glob(lyricDir + "*.txt"):
 		results = analyzeVerse(fileName)
-		cur.execute("INSERT INTO Songs(SongName, Artist, avgSyllPerLine, stddev) \
-																VALUES(	'" + str(results[0]) + "', \
+		cur.execute("INSERT INTO Songs(Id, SongName, Artist, avgSyllPerLine, stddev) \
+																VALUES(	'" + str(i) + "', \
+																				'" + str(results[0]) + "', \
 																				'" + str(results[1]) + "', \
 																				'" + str(results[2]) + "', \
 																				'" + str(results[3]) + "')")
 
 
 		con.commit()
-
+		i+=1
 	
 	# print SQL table
 	cur.execute("SELECT * FROM Songs")
