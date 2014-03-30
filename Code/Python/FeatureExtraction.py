@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import pdb
 import numpy as np
 import librosa
+import matplotlib.cm as cm
 
 from cPickle import dump, load
 from os.path import isdir, join, isfile
@@ -26,7 +27,7 @@ def plotArray(data):
 	ax.plot(data)
 	plt.show()
 
-def plotScatter(xdata, ydata, xlabel, ylabel, saveLoc, clusterlabels=False):
+def plotScatter(xdata, ydata,  xlabel, ylabel, saveLoc, labels=None):
 	"""
 	plotScatter() - make a scatter plot
 
@@ -42,7 +43,7 @@ def plotScatter(xdata, ydata, xlabel, ylabel, saveLoc, clusterlabels=False):
 	
 	fig1 = plt.figure()
 	ax = fig1.add_subplot(111)
-	ax.scatter(xdata, ydata)
+	ax.scatter(xdata, ydata, s = 25, c=labels, alpha=0.7,cmap=cm.Paired, vmin=0, vmax=3)
 	ax.set_xlabel(xlabel)
 	ax.set_ylabel(ylabel)
 
@@ -111,9 +112,12 @@ def centroid(spec, sr):
 def main_playlist(type = 'gmm'):
 
 	data = load(open('vocalFeatureData.p', 'r'))
-	ids = data['ID']
+	ids = data['artist']
 
 	del(data['ID'])
+	del(data['artist'])
+	del(data['song'])
+
 	data = np.vstack(data.viewvalues()).T
 
 	if type == 'gmm':
@@ -121,30 +125,54 @@ def main_playlist(type = 'gmm'):
 		g.fit(data)
 		labels = g.predict(data)
 	elif type == 'kmeans':
-		k = cluster.KMeans(n_components=4)
+		k = cluster.KMeans(4)
 		k.fit(data)
 		labels = k.predict(data)
 
-	return (ids, labels)
+	return labels
 
 def main_plots():
 	""" Make plots """
 	data = load(open('vocalFeatureData.p', 'r'))
 
+	del(data['ID'])
+	del(data['artist'])
+	del(data['song'])
+
 	keys = data.keys()
-	keys.remove("ID")
 
 	for i in range(len(keys)):
 		for j in range(len(keys)):
 
-			if i == j or j <= i:
+			if j <= i:
 				continue
 			else:
 				# Scale data to be from 0 to 1
-				saveFile = "{} - {}.pdf".format(keys[i], keys[j])
+				saveFile = "Clustered/{} - {}.pdf".format(keys[i], keys[j])
 				xData = np.divide(data[keys[i]], np.max(data[keys[i]]))
 				yData = np.divide(data[keys[j]], np.max(data[keys[j]]))
-				plotScatter(xData, yData, keys[i], keys[j], saveFile)
+				subData = np.vstack((xData, yData)).T
+				k = cluster.KMeans(4)
+				k.fit(subData)
+				labels = k.predict(subData)
+
+				plotScatter(xData, yData, keys[i], keys[j], saveFile, labels)
+
+def fixData():
+	vocalData = loadmat('../../Data/firstVerseTimes.mat')
+	oldData = load(open('vocalFeatureData.p', 'r'))
+	syllableData = load(open('syllAnalysis.p', 'r'))
+	newData = {'ID': np.array([vocalData['firstVerseTimes'][i][0][0][0] for i in range(len(vocalData['firstVerseTimes']))]), 
+				'artist': [vocalData['firstVerseTimes'][i][1][0] for i in range(len(vocalData['firstVerseTimes']))],
+				'song': np.array([vocalData['firstVerseTimes'][i][2][0] for i in range(len(vocalData['firstVerseTimes']))]),
+				'syllableMean': np.array([syllableData[i+1][0] for i in range(41)]).astype(float),
+				'syllableVar': np.array([syllableData[i+1][1] for i in range(41)]).astype(float)}
+
+	newData['syllableMean'][22] = 0
+	newData['syllableVar'][22] = 0
+
+	oldData.update(newData)
+	dump(oldData, open('vocalFeatureData.p', 'w'))
 
 def main():
 	""" 
@@ -164,8 +192,6 @@ def main():
 	fileList = [ join(audioPath, 'Vocals_' + str(vocalData['firstVerseTimes'][i][3][0])) for i in range(len(vocalData['firstVerseTimes'])) ]
 	numFiles = len(fileList)
 	vocalFeatures = np.zeros((numFiles, 8))
-
-	pdb.set_trace()
 
 	for i in range(numFiles):
 
@@ -192,7 +218,7 @@ def main():
 		vocalFeatures[i,7] = onset_times.shape[0] / (audio.shape[0] / float(sr))# Onset density
 
 	# Create dictionary for features
-	dataDict = {'ID': vocalData['firstVerseTimes'][:][0][0][0], 
+	dataDict = {'ID': np.array([vocalData['firstVerseTimes'][i][0][0][0] for i in range(len(vocalData['firstVerseTimes']))]), 
 				'onsetMean': vocalFeatures[:,0],
 				'onsetVar': vocalFeatures[:,1],
 				'tempo': vocalFeatures[:,2],
@@ -201,16 +227,18 @@ def main():
 				'contrastMean': vocalFeatures[:,5],
 				'contrastVar': vocalFeatures[:,6],
 				'onsetDensity': vocalFeatures[:,7],
-				'artist': vocalData['firstVerseTimes'][:][0][0],
-				'song': vocalData['firstVerseTimes'][:][0][0]}
+				'artist': [vocalData['firstVerseTimes'][i][1][0] for i in range(len(vocalData['firstVerseTimes']))],
+				'song': np.array([vocalData['firstVerseTimes'][i][2][0] for i in range(len(vocalData['firstVerseTimes']))])}
 
 	dump(dataDict, open('vocalFeatureData.p', 'w'))
 
 	print ('Done')
 
 if __name__ == '__main__':
-	main()
-	# main_plots()
-	(ids, labels) = main_playlist('kmeans')
 
-	pdb.set_trace()
+	# main()
+
+	# fixData()
+	main_plots()
+	# out_kmeans = main_playlist('kmeans')
+
